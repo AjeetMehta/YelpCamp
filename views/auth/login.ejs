@@ -1,0 +1,23 @@
+<%-include("../partials/header") %>
+
+	<div class="container col-lg-4" id="log" style="background-color: rgba(45,43,85,0.75);border-radius: 10px">
+	  <h1 style="text-align: center; font-family: 'Akronim'"><b>Login</b></h1>
+	 <form action="/login" method="POST">
+	 	<div class="form-group">
+	 		<input type="text" class="form-control" name="username" placeholder="username" required="">
+	 	</div>
+	 	<div class="form-group">
+	 		<input type="password" class="form-control" name="password" placeholder="password" required="">
+	 	</div>
+	 	<div class="form-group">
+	 		<button class="btn btn-success col-lg-6" name="submit">Login</button>
+	 		<a style="margin-left: 50px;" href="#"><b style="color:white">Lost password?</b></a>
+	 	</div><br><hr>
+	 	<div class="form-group" style="text-align: center;">
+	 		<p>New to site?
+	 		<a href="/signup"><b style="color:white">Create Account</b></a></p>
+	 	</div>
+	 </form>
+	</div>
+
+	<%-include("../partials/footer") %>
